@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Bloom Botanicals</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Merriweather:wght@400;700&display=swap" />
+    <!-- stylesheet -->
+    <link href="css/bloombotanicals.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+
+        <header>
+            <!-- open close nav for mobile -->
+            <input type="checkbox" id="nav-checkbox">
+            <div class="flex-container">
+                <label for="nav-checkbox" class="menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30"><path d="M0 88C0 74.75 10.75 64 24 64H424C437.3 64 448 74.75 448 88C448 101.3 437.3 112 424 112H24C10.75 112 0 101.3 0 88zM0 248C0 234.7 10.75 224 24 224H424C437.3 224 448 234.7 448 248C448 261.3 437.3 272 424 272H24C10.75 272 0 261.3 0 248zM424 432H24C10.75 432 0 421.3 0 408C0 394.7 10.75 384 24 384H424C437.3 384 448 394.7 448 408C448 421.3 437.3 432 424 432z"/></svg>
+                    <!-- <img src="images/bars.svg"> -->
+                </label>
+                <!-- This needs to be placed above the nav tage because otherwise the lable will be in the nav and pushed off screen with the nav -- that's what the issue was -->
+            </div> <!-- .flex-container -->
+
+            <div class="hero">
+                <h1>Welcome to BloomBotanicals</h1>
+                <h2>Discover a World of Greenery at Your Fingertips</h2>
+            </div> <!-- .hero -->
+
+            <!-- <img src="images/plantstore.jpg" alt="plants in the store" style="height: 250px;"> -->
+            <!-- took this out and moved it using the svg tag so I could change the color -->
+        
+        <nav>
+            <!-- nav list -->
+            <ul>
+                <li><a href="#sustainability">Sustainability</a></li>
+                <li><a href="#plant-care">Plant Care</a></li>
+                <li><a href="#custom-arrangements">Custom Arrangements</a></li>
+                <li><a href="#collections">Collections</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <!-- main content begins -->
+        <div class="content-container">
+            <main>
+                <section>
+
+                    <h1>Welcome to where every plant tells a story</h1>
+                    <p>At BloomBotanicals, we believe in bringing nature closer to you. Step into a sanctuary of lush, vibrant greenery and transform your living spaces with the beauty of indoor plants. Whether you're a seasoned plant enthusiast or just beginning your green journey, we have something special for you.</p>
+
+                    <article>
+                        <h2>Explore Our Collections</h2>
+                        <p>Browse through our curated collections of air-purifying wonders, elegant succulents, and eye-catching potted arrangements. Each plant is handpicked to bring a touch of nature into your home or office, creating an oasis of tranquility.</p>
+                        <div class="flex-container">
+                            <a href="#collections" class="cta-button">Browse Plants</a>
+                        </div> <!-- .flex-container -->
+                    </article>
+
+                    <article id="sustainability">
+                        <h2>Sustainability at Heart</h2>
+                        <p>We care for the Earth just as much as we care for your plants. Discover our commitment to sustainability – from responsible sourcing to eco-friendly packaging. Join us in nurturing a greener planet, one plant at a time.</p>
+                    </article>
+
+                    <article id="plant-care">
+                        <h2>Plant Care Made Easy</h2>
+                        <p>Not sure how to care for your new green companions? Our Plant Care section provides expert tips and guides, ensuring your plants thrive. From watering schedules to sunlight requirements, we've got you covered.</p>
+                    </article>
+
+                    <article id="custom-arrangements">
+                    <h2>Create Your Oasis</h2>
+                        <p>Bring your vision to life with our Custom Arrangements. Choose your favorite plants and containers to craft a personalized botanical masterpiece. Perfect for special occasions or adding a touch of nature to your space.</p>
+                    </article>
+
+                    <article>
+                        <h2>Start Your Green Journey Today</h2>
+                        <p>Embrace the beauty of nature within your home. Explore our collections, learn about sustainability, and embark on a journey of growth and greenery. Welcome to BloomBotanicals – where every plant tells a story.</p>
+                    </article>
+
+                </section>
+
+                <section id="collections">
+
+                    <h2>Check out our most popular plants</h2>
+
+                    <div class="plant">
+                        <h3> Snake Plant</h3>
+                        <img src="images/snakeplant.jpg" alt="snake plant">
+                        <div class="plant-description">
+                            <p><strong>Scientific Name:</strong> Sansevieria Trifasciata</p>
+                            <p><strong>Details:</strong> Known for its upright, sword-like leaves with variegated patterns. Excellent air purifier and low-maintenance.</p>
+                            <p><strong>Care Instructions:</strong> Thrives in indirect light, water sparingly, and well-draining soil.</p>
+                            <p><strong>History:</strong> Native to West Africa, traditionally believed to bring good luck.</p>
+                            <p><strong>Origin:</strong> West Africa</p>
+                        </div>
+                    </div> <!-- .plant -->
+
+                    <div class="plant">
+                        <h3> Peace Lily</h3>
+                        <img src="images/peacelily.jpg" alt="snake plant">
+                        <p><strong>Scientific Name:</strong> Spathiphyllum Wallisii</p>
+                        <p><strong>Details:</strong> Elegant, dark green leaves with white blooms. Effective air purifier.</p>
+                        <p><strong>Care Instructions:</strong> Prefers indirect light, keep soil consistently moist, and humid conditions.</p>
+                        <p><strong>History:</strong> Native to tropical regions of America.</p>
+                        <p><strong>Origin:</strong> Tropical America</p>
+                    </div> <!-- .plant -->
+
+                    <div class="plant">
+                        <h3> ZZ Plant</h3>
+                        <img src="images/zzplant.jpg" alt="snake plant">
+                        <p><strong>Scientific Name:</strong> Zamioculcas Zamiifolia</p>
+                        <p><strong>Details:</strong> Glossy, dark green leaves with a unique leaflet structure. Tolerant to low light.</p>
+                        <p><strong>Care Instructions:</strong> Low water requirements, adapts to low light conditions.</p>
+                        <p><strong>History:</strong> Originated in Eastern Africa.</p>
+                        <p><strong>Origin:</strong> Eastern Africa</p>
+                    </div> <!-- .plant -->
+
+                </section> <!-- #collections -->
+
+            </main>
+        </div> <!-- .content-container -->
+
+        <footer>
+            &copy; 2024 Bloom Botanicals. All rights reserved.
+        </footer>
+
+    </div> <!-- .page-container-->
+</body>
+</html>

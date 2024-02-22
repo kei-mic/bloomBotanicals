@@ -1,0 +1,203 @@
+
+* { 
+    box-sizing: border-box; 
+}
+img { 
+    max-width: 100%; 
+    border: 0; 
+}
+html {
+    -moz-text-size-adjust: 100%; /* Modzilla */
+    -webkit-text-size-adjust: 100%; /* Chrome, Safari, Edge */
+    text-size-adjust: 100%;   
+}
+
+/* ------ page styles ------ */
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 24px;
+}
+header {
+    background-color: #2D6A4F;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    line-height: 3rem;
+}
+section {
+    padding: 20px;
+    /* adds breathing room around the main content */
+}
+footer {
+    background-color:   #4D342A;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: .8em;
+}
+.flex-container {
+    display: flex;
+}
+.page-container {
+    position: relative;
+    min-height: 100vh;
+    /* if the content is shorter than the browser window, this allows you to pin something like the footer to the bottom */
+}
+.content-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+    /* contains the main content to make it easier to read */
+}
+
+/* ------ typefaces ------ */
+h1, h2, h3 {
+    font-family: 'Merriweather', Arial, sans-serif;
+}
+main h1 {
+    border-bottom: 2px solid #8D725E;
+    line-height: 1.5em;
+}
+main h2 {
+    color: #2D6A4F;
+}
+h3 {
+    border-bottom: 1px solid #8D725E;
+    line-height: 2em;
+}
+
+/* ------ styling for the hero in the header ------ */
+.hero {
+    padding: 10%;
+    background-image: 
+        linear-gradient(to bottom right, #00000055, #00000026), 
+        url(../images/plantstore.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------ navigation ------ */
+nav {
+    position: absolute;
+    background-color: #2D6A4F;
+    padding: 8px;
+    width: 12rem;
+    left: -12rem;
+    z-index: 100;
+    transition: all .2s ease;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+/* - collapsable nav interaction - */
+#nav-checkbox {
+    position: absolute;
+    left: -12em;
+    /* pulls the checkbox from the normal flow of the page and places it off screen to the left */
+}
+#nav-checkbox:checked ~ nav {
+    left: 0;
+    /* placement of the nav when the checkbox status is checked */
+}
+header .flex-container {
+    justify-content: flex-end;
+    /* places the menu icon in the upper right corner */
+}
+.menu-button {
+    position: absolute;
+    cursor: pointer;
+    padding: 8px;
+    /* menu button styling */
+}
+
+label svg {
+    height: 30px;
+    fill: #fff;
+    /* size and color of the svg menu icon */
+}
+
+/* ------ Class styling ------ */
+.cta-button {
+    padding: 8px 40px;
+    background-color: #4D342A;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    /* display: inline-block; */
+    text-align: center;
+    margin-bottom: 16px;
+}
+main .flex-container {
+    justify-content: center;
+    /* pushes .cta-button to the center. for some reason this doesn't work when I add flex properties to the .cta-button maybe has to do with flexcontainer?*/
+}
+
+.plant {
+    max-width: 600px;
+    padding:4px 24px 24px 24px;
+    border-radius: 8px;
+    background-image: 
+        linear-gradient(to bottom right, #57a77360, #d9c7b960);
+    margin: 16px auto;
+    overflow: hidden;
+    line-height: 1.5em;
+}
+.plant img {
+    width: 33%;
+    float: right;
+    margin-left: 16px;
+    border-radius: 8px;
+}
+#collections {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ------ Media Querys ------ */
+
+@media (min-width: 800px) {
+    /* navigation styling */
+    nav {
+        text-align: center;
+        position: static;
+        width: 100%;
+        left: 0;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    nav li {
+        display: inline-block;
+    }
+    nav a {
+        padding: 8px 16px 2px 16px;
+    }
+    .menu-button {
+        display: none;
+    }
+
+    #collections {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
